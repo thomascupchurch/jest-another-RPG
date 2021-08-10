@@ -1,7 +1,7 @@
 const { TestWatcher } = require('jest');
 const Player = require('../lib/Player');
 
-TestWatcher('creates a player object', () => {
+test('creates a player object', () => {
     const player = new Player('Dave');
 
     expect(player.name).toBe('Dave');
